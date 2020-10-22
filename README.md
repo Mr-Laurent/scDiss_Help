@@ -2,8 +2,8 @@
 
 #### 1e étape : Télécharger le .zip du repository https://github.com/effiken/martin_et_al_cell_2019 , le dézipper
 
-Il y a de petites adaptations à apporter aux fichiers :
-Par exemple, je garde le dossier dézippé dans mon dossier de téléchergements (D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master )
+Il y a de petites adaptations à apporter aux fichiers dans ce dossier :
+Par exemple, mon dossier dézippé est dans mon dossier de téléchergements (D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master )
 
 - Aller dans le fichier umitab_utils.r
 D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/umitab_utils.r
