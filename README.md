@@ -47,18 +47,25 @@ Le tout est mis dans un dossier (ici identifié Projet1) et en plus un dossier q
 #### 3e étape : Transformation en objet.rd lisible par scDissector 
 sur R, à adapter avec ton path, si par exemple le /Projet1 est dans D:/singlecell/ ça donne :
 
-`source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/umitab_utils.r")
-source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/compile_data.r")
-compile_data(sample_IDs="Projet1" ,input_path="D:/singlecell/",output_path="D:/singlecell/outProjet1",filtered_or_raw="filtered")`
+`
+source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/umitab_utils.r")  
+source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/compile_data.r")  
+compile_data(sample_IDs="Projet1", input_path="D:/singlecell/", output_path="D:/singlecell/outProjet1", filtered_or_raw="filtered")  
+`
 
 Si tu as plusieurs datasets à transformer en même temps :
 
-`source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/umitab_utils.r")
-source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/compile_data.r")
-my_levels<-c("Projet1","Projet2","Projet3")
-for( i in my_levels){
-  compile_data(sample_IDs=as.vector(i) ,input_path="D:/singlecell/",output_path=paste0("D:/singlecell/out",i,sep=""),filtered_or_raw="filtered")
-}
+`
+source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/umitab_utils.r")  
+source("D:/Users/Thomas/Telechargement/martin_et_al_cell_2019-master/clustering/scripts/compile_data.r") ` <br />
+`
+my_levels<-c("Projet1","Projet2","Projet3") ` <br />
+`
+for( i in my_levels){ ` <br />
+`
+  compile_data(sample_IDs=as.vector(i), input_path="D:/singlecell/", output_path=paste0("D:/singlecell/out",i,sep=""), filtered_or_raw="filtered") `<br />
+ `
+}  
 `
 ***
 
@@ -67,6 +74,8 @@ prendre le Projet1.rd dans outProjet1 et le déposer dans le dossier avec les mo
 Ajouter son nom aux fichiers samples.csv et /metadata/sample_annots.csv
 
 L'objet peut maintenant être reconnu par ScDissector, une fois lancé sur R
-`library(scDissector)
-run_scDissector()`
+`
+library(scDissector)  
+run_scDissector()
+`
 
