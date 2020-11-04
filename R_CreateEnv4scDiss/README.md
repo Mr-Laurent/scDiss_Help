@@ -25,7 +25,6 @@ devtools::install_version(package = 'Seurat', version = package_version('3.2.1')
 install.packages("Matrix.utils")
 install_github("effiken/scDissector")
  ```
-
 (scDissector provient du repository suivant : https://github.com/effiken/scDissector)
 
 Pour faire fonctionner scDissector, il est nécessaire d'avoir différents fichiers dont des modèles pour clusteriser les cellules
