@@ -1,7 +1,9 @@
 Pour pouvoir utiliser ScDissector, il faut d'abord installer R et Rstudio
 
 Les versions compatibles avec scDissector ne sont pas évidente, mais par exemple ça fonctionne sur R3.6.3 :
+
 Windows : https://cran.r-project.org/bin/windows/base/old/3.6.3/R-3.6.3-win.exe
+
 Mac : https://cran.r-project.org/bin/macosx/R-3.6.3.nn.pkg
 
 Puis installer Rstudio, l'interface de codage :
@@ -12,7 +14,16 @@ Une fois Rstudio ouvert, il faut installer les différents packages nécessaires
 Avertissement : le package "Seurat" est très long à installer
 
  ```
- .
+if (!requireNamespace("BiocManager",quietly=T))
+  install.packages("BiocManager")
+
+BiocManager::install('devtools')
+
+BiocManager::install('igraph')
+devtools::install_version(package = 'Seurat', version = package_version('3.2.1'))
+
+install.packages("Matrix.utils")
+install_github("effiken/scDissector")
  ```
 
 (scDissector provient du repository suivant : https://github.com/effiken/scDissector)
