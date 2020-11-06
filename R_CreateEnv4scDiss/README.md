@@ -23,17 +23,18 @@ install_github("effiken/scDissector")
  ```
 (scDissector provient du repository suivant : https://github.com/effiken/scDissector)
 
-Pour faire fonctionner scDissector, il est nécessaire d'avoir différents fichiers dont des modèles pour clusteriser les cellules
+Pour faire fonctionner scDissector, il est existe différents fichiers dont des modèles pour clusteriser les cellules qui sont nécessaires :
 ```
 scDiss_clus______ samples.csv
          |_______ model_NAME.rd
-         |_______ model_NAME_cluster_set.txt
-         |_______ model_NAME_order.txt
-         |_______ model_NAME_annots.txt
+         |_______ model_NAME_cluster_set.txt  (optionnel)
+         |_______ model_NAME_order.txt        (optionnel)
+         |_______ model_NAME_annots.txt       (optionnel)
          |_______ model_versions.csv
-         |_______ sample_sets.txt
+         |_______ sample_sets.txt             (optionnel)
+         |_______ n*( objects.rd)
          |_______ metadata _______sample_annots.csv
-         |_______n*( objects.rd)
+
 ```
 
 
