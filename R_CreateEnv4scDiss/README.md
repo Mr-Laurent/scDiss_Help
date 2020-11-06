@@ -11,16 +11,12 @@ https://rstudio.com/products/rstudio/download/#download
 
 
 Une fois Rstudio ouvert, il faut installer les différents packages nécessaires à l'interface, le chargement d'objets et les dépendances de scDissector :
-Avertissement : le package "Seurat" est très long à installer
 
  ```
 if (!requireNamespace("BiocManager",quietly=T))
   install.packages("BiocManager")
 
 BiocManager::install('devtools')
-
-BiocManager::install('igraph')
-devtools::install_version(package = 'Seurat', version = package_version('3.2.1'))
 
 install.packages("Matrix.utils")
 install_github("effiken/scDissector")
@@ -41,3 +37,12 @@ scDiss_clus______ samples.csv
 ```
 
 
+
+NOTE : 
+
+Si il y a besoin d'une version Seurat, on peut l'installer comme suit :
+/!\ L'installation de Seurat est très longue
+```
+BiocManager::install('igraph')
+devtools::install_version(package = 'Seurat', version = package_version('3.2.1'))
+``` 
