@@ -10,5 +10,5 @@ library(scDissector)
 ldm=load_seurat_rds("~/seur2_RatSpleenMNP_18pcs.rds",model_name = "supergut_190111", 
                     clustering_data_path = "~/sc_data_files/")
 
-run_scDissector(preloaded_data=ldm, clustering_data_path = "C:/Users/E134321B/Desktop/Work stuff/Trebuchet/clust_gut_copy/")
+run_scDissector(preloaded_data=ldm, clustering_data_path = "~/sc_data_files")
 ```
