@@ -5,6 +5,8 @@ Les versions compatibles avec scDissector ne sont pas évidente, mais par exempl
 Windows : https://cran.r-project.org/bin/windows/base/old/3.6.3/R-3.6.3-win.exe
 
 Mac : https://cran.r-project.org/bin/macosx/R-3.6.3.nn.pkg
+Pour la dernière version : https://cran.r-project.org/bin/macosx/
+
 
 Puis installer Rstudio, l'interface de codage :
 https://rstudio.com/products/rstudio/download/#download
@@ -42,7 +44,7 @@ scDiss_clus______ samples.csv
 NOTE : 
 
 Si il y a besoin d'une version Seurat, on peut l'installer comme suit :
-/!\ L'installation de Seurat est très longue
+/!\ L'installation de Seurat peut être très longue
 ```
 BiocManager::install('igraph')
 devtools::install_version(package = 'Seurat', version = package_version('3.2.1'))
