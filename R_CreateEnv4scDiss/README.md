@@ -20,6 +20,7 @@ if (!requireNamespace("BiocManager",quietly=T))
 
 BiocManager::install('devtools')
 
+library(devtools)
 install.packages("Matrix.utils")
 install_github("effiken/scDissector")
  ```
